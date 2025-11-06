@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "gunicorn app:app"
+
+[[services]]
+name = "web"
+port = 8000
